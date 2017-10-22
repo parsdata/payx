@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btn = (Button) findViewById(R.id.button1);
-        sAndroidID = Secure.getString(getContentResolver(), Secure.ANDROID_ID);
+        sAndroidID = "1233";/*Secure.getString(getContentResolver(), Secure.ANDROID_ID);*/
         btn.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -60,13 +60,13 @@ public class MainActivity extends AppCompatActivity {
 
                         sActiveCode = adapter.getJson_String(0,gamesList);
 
-                        if(sActiveCode != "")
+                        if(sActiveCode != null)
                         {
                             Intent intent = new Intent(getApplicationContext(), ConfrimActivity.class);
                             intent.putExtra("ActiveCode", sActiveCode);
                             startActivity(intent);
 
-                            Toast.makeText(MainActivity.this,"کد فعالسازیxXx  با موفقیت برای شما ارسال شد.",
+                            Toast.makeText(MainActivity.this,"کد فعالسازی y برای شما ارسال شد.",
                                     Toast.LENGTH_SHORT).show();
 
                         }
@@ -77,7 +77,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onErrorResponse(VolleyError error) {
 
-                        Toast.makeText(MainActivity.this, error.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this, error.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "tstmsg", Toast.LENGTH_SHORT).show();
                     }
                 });
 
