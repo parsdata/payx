@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pars V</string>
+    <string name="title_activity_confirm">ConfirmActivity</string>
+    <string name="Mobile_No">شماره موبایل نامعتر است</string>
+</resources>
