@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                             intent.putExtra("ActiveCode", sActiveCode);
                             startActivity(intent);
 
-                            Toast.makeText(MainActivity.this,"کد فعالسازی با موفقیت برای شما ارسال شد.",
+                            Toast.makeText(MainActivity.this,"کد فعالسازیxx  با موفقیت برای شما ارسال شد.",
                                     Toast.LENGTH_SHORT).show();
 
                         }
